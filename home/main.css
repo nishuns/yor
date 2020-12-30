@@ -1,0 +1,41 @@
+/* --Post--Request-- */
+.main-container{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    padding: 1rem;
+}
+
+.profile-card{
+margin: 1em;
+}
+
+/* style for card */
+.center{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.center-margin{
+    margin: 0 auto;
+}
+
+/* card-image */
+.profile-card-image{
+    
+    width: 100px;
+    margin: 0 auto; 
+    margin-bottom: 1em;
+}
+
+
+/* styles for Post */
+
+.post-container{
+    margin: 1em;
+    overflow: auto;
+}
+.post-container .post{
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.719);
+    padding: 1em;
+}

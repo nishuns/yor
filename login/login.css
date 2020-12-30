@@ -22,6 +22,8 @@
 .header{
     display: flex;
     justify-content: space-evenly;
+    width: 50%;
+    margin-left: auto;
 }
 
 .menu-icon{
@@ -57,16 +59,11 @@
     justify-content: center;
 }
 
-.header{
-    width: 50%;
-    margin-left: auto;
-}
-
 .header-elem{
     width: 20%;
 }
 
-#site-title{
+.site-title{
     font-size: 10rem;
 }
 
@@ -207,3 +204,4 @@
         background: rgba(0, 0, 0, 0.575);
     }
 }
+

@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway;
+}
+
+.tempbox{
+  border: 1px solid red;
+}
+
+body{
+  background: linear-gradient(90deg,rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)),url('./Gnome.png');
+  background-size: cover;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  padding: 0.5em .8em;
+  background: rgba(0, 9, 29, 0.48);
+}
+
+.navigation-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.48);
+  padding: 0.5em .8em;
+}
+
+.home-title{
+  background: none;
+  font-size: 2.5rem;
+}
+
+.nav-menu{
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  display: none;
+}
+
+.flex-box{
+  margin: 0 auto;
+  width: 80%;
+}
+
+.nav-menu-elem .elem{
+  color: #eeeeee;
+  cursor: pointer;
+  margin: 0;
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  background: linear-gradient(135deg,rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)), url('./Gnome2.png');
+  padding: 12px;
+  text-align: center;
+}
+
+.nav-menu-elem-dark{
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff; 
+  background: rgba(6, 0, 8, 0.8);
+}
+
+.main-home{
+  width: 100%;
+  /* height: 100vh; */
+  margin: 0 auto;
+  background: #fff;
+}
+
+/* profile-navigation-bar */
+.profile-nav{
+  position: absolute;
+  z-index: 2;
+  width: 40%;
+  right: 0px;
+  top: 70px;
+  display: none;
+  color: #eeeeee;
+  cursor: pointer;
+  border-radius: 0;
+  background: linear-gradient(135deg,rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./Gnome2.png');
+  text-align: center;
+}
+
+.nav-menu-elem .elem:hover{
+  border-radius: 0;
+  /* width: 100%; */
+  background: linear-gradient(135deg,rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('./Gnome2.png');
+}
+
+/* ----navigation button---- */
+.nav-container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 4px);
+    transform: rotate(-45deg) translate(-8px, 4px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-9px, -6px);
+    transform: rotate(45deg) translate(-9px, -6px);
+  }
+
+  @media screen and (min-width: 960px){
+    body{
+      background: linear-gradient(360deg,rgb(0, 0, 0), rgba(0, 0, 0, 0.4)),url('./Gnome2.png');
+    }
+
+    .home-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em .8em;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+    .main-home{
+      width: 98%;
+      height: 89vh;
+      margin: 0 auto;
+      margin-top: 1em;
+      background: #eeeeee;
+    }
+
+    .nav-container{
+      display: none;
+    }
+    
+    .navigation-bar{
+      width: 100%;
+      background: none;
+      /* border: 1px solid red; */
+    }
+
+    .nav-menu{
+      width: 95%;
+      /* border: 1px solid red; */
+      display: block;
+    }
+
+    /* profile-navingation */
+    .profile-nav{
+      width: 10%;
+    }
+
+    .flex-box{
+      /* border: 1px solid red; */
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row;
+    }
+
+    .nav-menu-elem .elem{
+      border-radius: 25px;
+      margin-right:1em; 
+      color: #eeeeee;
+      background: none;
+      border: none;
+      /* border: 1px solid #eeeeee; */
+      padding: 12px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .nav-menu-elem-dark{
+      border: none;
+      background: none;
+    }
+
+    .home-header{
+      background: rgba(0, 0, 0, 0.48);
+    }
+  }
