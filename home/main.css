@@ -1,7 +1,11 @@
+body{
+    display: none;
+}
 /* --Post--Request-- */
 .main-container{
     display: flex;
     /* flex-direction: column; */
+    flex-wrap: wrap;
     justify-content: center;
     padding: 1rem;
 }
@@ -39,3 +43,5 @@ margin: 1em;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.719);
     padding: 1em;
 }
+
+@media screen and ()
