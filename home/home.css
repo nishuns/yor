@@ -10,8 +10,14 @@
 }
 
 body{
-  background: linear-gradient(90deg,rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)),url('./Gnome.png');
+  background: linear-gradient(90deg,rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)),url('./gnome2.jpg');
   background-size: cover;
+}
+
+.home-header{
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .header{
@@ -22,6 +28,9 @@ body{
 }
 
 .navigation-bar{
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,16 +46,17 @@ body{
 .nav-menu{
   width: 100%;
   z-index: 2;
-  position: absolute;
+  /* position: fixed; */
   display: none;
 }
 
 .nav-menu .flex-box{
   margin: 0 auto;
   display: flex;
-  width: 85%;
+  width: 75%;
   flex-direction: column;
   justify-content: center;
+  /* flex-wrap: wrap; */
 }
 
 .nav-menu-elem{
@@ -56,8 +66,8 @@ body{
   width: 100%;
   border-radius: 0;
   border: none;
-  background: linear-gradient(135deg,rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./Gnome2.png');
-  padding: 20px 0;
+  background: linear-gradient(135deg,rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./gnome2.jpg');
+  padding: 15px 0;
   text-align: center;
 }
 
@@ -91,7 +101,7 @@ body{
   /* color: #eeeeee;
   cursor: pointer;
   border-radius: 0;
-  background: linear-gradient(135deg,rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./Gnome2.png');
+  background: linear-gradient(135deg,rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./gnome2.jpg');
   text-align: center; */
 }
 
@@ -102,7 +112,7 @@ body{
 
 .nav-menu-elem:hover{
   border-radius: 0;
-  background: linear-gradient(135deg,rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./Gnome2.png');
+  background: linear-gradient(135deg,rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./gnome2.jpg');
 }
 
 /* ----navigation button---- */
@@ -112,11 +122,15 @@ body{
   }
   
   .bar1, .bar2, .bar3 {
-    width: 35px;
+    width: 30px;
     height: 3px;
     background-color: rgb(255, 255, 255);
     margin: 6px 0;
     transition: 0.4s;
+  }
+
+  .bar2{
+    width: 40px;
   }
   
   .change .bar1 {
@@ -131,15 +145,16 @@ body{
     transform: rotate(45deg) translate(-9px, -6px);
   }
 
-  @media screen and (min-width: 960px){
+  @media screen and (min-width: 768px){
     body{
-      background: linear-gradient(360deg,rgb(0, 0, 0), rgba(0, 0, 0, 0.4)),url('./Gnome2.png');
+      background: linear-gradient(360deg,rgb(0, 0, 0), rgba(0, 0, 0, 0.4)),url('./gnome2.jpg');
     }
 
   .home-header{
+    position: static;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
     padding: 0.5em .8em;
     /* background: rgba(0, 0, 0, 0.6); */
@@ -157,16 +172,17 @@ body{
     }
     
     .navigation-bar{
-      width: 100%;
+      /* width: 30%; */
       background: none;
       /* border: 1px solid red; */
     }
 
     .nav-menu{
       position: static;
-      width: 50%;
+      min-width: 30%;
+      max-width: 600px;
       /* border: 1px solid red;  */
-      margin: 0 auto;
+      /* margin: 0 auto; */
     }
     .nav-menu .flex-box{
       /* border: 1px solid red;   */
@@ -186,14 +202,15 @@ body{
     /* profile-navingation */
     .profile-nav{
       position: fixed;
-      width: 15%;
+      min-width: 150px;
+      max-width: 200px;
       top: 87px;
       right: 100px;
       cursor: pointer;
       margin: 0;
       border-radius: 0;
       border: none;
-      background: linear-gradient(135deg,rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./Gnome2.png');
+      background: linear-gradient(135deg,rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./gnome2.jpg');
       padding: 12px;
       text-align: center;
     }
@@ -224,3 +241,5 @@ body{
       background: rgba(0, 0, 0, 0.48);
     }
   }
+
+

@@ -26,55 +26,6 @@ $('.profile-image-href').mouseleave(()=>{
 });
 
 
-// if($('body').outerWidth()<768){
-//   $('.profile-image-href').click(()=>{
-//     $(".profile-nav").slideToggle();
-//   });
-// }else{
-//   $('.profile-image-href').mouseenter(()=>{
-//     $(".profile-nav").slideDown();
-//   });
-
-//   $('.profile-image-href').mouseleave(()=>{
-//     $('.profile-nav').mouseenter(()=>{
-//       $(".profile-nav").slideDown();
-//     });
-//     $('.profile-nav').mouseleave(()=>{
-//       $(".profile-nav").slideUp();
-//     });
-//   });
-// }
-
-// $(document).ready(function(){
-//   $(window).resize(function(){
-//     console.log($('body').outerWidth());
-//     if($('body').outerWidth()<768){
-//       $('.profile-image-href').click(()=>{
-//         $(".profile-nav").slideToggle();
-//       });
-//     }else{
-//       $('.profile-image-href').mouseenter(()=>{
-//         $(".profile-nav").slideDown();
-//       });
-    
-//       $('.profile-image-href').mouseleave(()=>{
-
-//         $('.profile-nav').mouseenter(()=>{
-//           $(".profile-nav").slideDown();
-//         });
-//         $('.profile-nav').mouseleave(()=>{
-//           $(".profile-nav").slideUp();
-//         });
-        
-//       });
-//     }
-//   });
-// })
-
-
-
-
-
 if($('body').outerWidth()<768){
   $('.nav-menu').slideUp();
 }else{
@@ -98,4 +49,10 @@ $(".nav-container").click(function(){
         document.querySelector('.nav-container').classList.toggle("change");
       }
     });
-  })
+  });
+
+// scrolling of posts
+document.querySelector('.post-container').onscroll=()=>{
+  console.log(window.scroll);
+document.querySelector('.post-container').scrollY=window.scrollY;
+}

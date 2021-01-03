@@ -1,5 +1,8 @@
 body{
     display: none;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
 }
 /* --Post--Request-- */
 .main-container{
@@ -11,7 +14,7 @@ body{
 }
 
 .profile-card{
-margin: 1em;
+/* margin: 1em; */
 }
 
 /* style for card */
@@ -36,12 +39,70 @@ margin: 1em;
 /* styles for Post */
 
 .post-container{
-    margin: 1em;
+    /* margin: 1em; */
     overflow: auto;
+    max-width: 768px;
+    max-height: 85vh;
+    background: #eeeeee;
 }
 .post-container .post{
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.719);
+    background: #fff;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
     padding: 1em;
+    width: 95%;
 }
 
-@media screen and ()
+.post .post-header{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.post .post-header .header-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:0 5px;
+}
+
+.post .post-header .header-container .margin-zero{
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* User response for post */
+.post-response{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+.post-response .response-button{
+    /* border: 1px solid red; */
+    padding: 15px;
+}
+
+.post-response .response-button .button-text{
+    cursor: pointer;
+}
+
+.post-response .response-button .button-text:hover{
+    color: #39C0ED;
+}
+
+@media screen and (max-width: 768px){
+    .profile-card{
+        display: none;
+    }
+
+    .main-container{
+        margin-top: 4.4em;
+    }
+}
