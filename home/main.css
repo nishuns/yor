@@ -43,7 +43,7 @@ body{
     overflow: auto;
     max-width: 768px;
     max-height: 85vh;
-    background: #eeeeee;
+    /* background: #eeeeee; */
 }
 .post-container .post{
     background: #fff;
