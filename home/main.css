@@ -105,4 +105,13 @@ body{
     .main-container{
         margin-top: 4.4em;
     }
+
+    body{
+        height: auto;
+    }
+
+    .post-container{
+        /* overflow: hidden; */
+        max-height: 100%;
+    }
 }

@@ -34,7 +34,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(0, 0, 0, 0.48);
+  background:linear-gradient(90deg,rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url('./gnome2.jpg');
   padding: 0.5em .8em;
 }
 
@@ -47,6 +47,7 @@ body{
   width: 100%;
   z-index: 2;
   /* position: fixed; */
+  background:
   display: none;
 }
 
