@@ -14,7 +14,7 @@ body{
 }
 
 .profile-card{
-/* margin: 1em; */
+    margin-bottom: 1em;
 }
 
 /* style for card */
@@ -99,7 +99,7 @@ body{
 
 @media screen and (max-width: 768px){
     .profile-card{
-        display: none;
+        /* display: none; */
     }
 
     .main-container{
